@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Amministrazione Immobili - Portale Servizi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #800020 0%, #a0002a 100%);
+        }
+        
+        .card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(128, 0, 32, 0.3);
+            border-color: #800020;
+        }
+        
+        .icon-container {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #800020 0%, #a0002a 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.1s; opacity: 0; }
+        .delay-2 { animation-delay: 0.2s; opacity: 0; }
+        .delay-3 { animation-delay: 0.3s; opacity: 0; }
+        .delay-4 { animation-delay: 0.4s; opacity: 0; }
+        .delay-5 { animation-delay: 0.5s; opacity: 0; }
+        
+        .logo-container {
+            max-width: 400px;
+            margin: 0 auto 20px;
+        }
+        
+        .logo-container img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .bordeaux-text {
+            color: #800020;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <div class="gradient-bg text-white py-12 mb-12">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="logo-container">
+                <img src="logo-cai.jpg" alt="Centro Amministrazione Immobili" />
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold mb-3">
+                Portale Servizi Online
+            </h1>
+            <p class="text-lg opacity-90">
+                Seleziona il servizio di cui hai bisogno
+            </p>
+        </div>
+    </div>
+
+    <!-- Cards Container -->
+    <div class="max-w-6xl mx-auto px-6 pb-16">
+        <div class="grid md:grid-cols-2 gap-8">
+            
+            <!-- Card 1: Portale Condominiale -->
+            <a href="https://studiocai2.cedhousesuite.it/index.php" target="_blank" class="card bg-white rounded-2xl shadow-lg p-8 block animate-fade-in delay-1">
+                <div class="icon-container">
+                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">
+                    Portale Condominiale
+                </h2>
+                <p class="text-gray-600 mb-4">
+                    Accedi al gestionale condominiale per consultare documenti e informazioni
+                </p>
+                <div class="flex items-center bordeaux-text font-semibold">
+                    <span>Accedi al portale</span>
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Card 2: Segnalazioni Interventi -->
+            <a href="https://studio-cai-messenger.vercel.app/" target="_blank" class="card bg-white rounded-2xl shadow-lg p-8 block animate-fade-in delay-2">
+                <div class="icon-container">
+                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">
+                    Segnalazioni Interventi
+                </h2>
+                <p class="text-gray-600 mb-4">
+                    Invia segnalazioni per interventi e manutenzioni condominiali
+                </p>
+                <div class="flex items-center bordeaux-text font-semibold">
+                    <span>Accedi al servizio</span>
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Card 3: Dipendenti Portieri -->
+            <a href="https://studio-cai-portieri.vercel.app/" target="_blank" class="card bg-white rounded-2xl shadow-lg p-8 block animate-fade-in delay-3">
+                <div class="icon-container">
+                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">
+                    Area Dipendenti - Portieri
+                </h2>
+                <p class="text-gray-600 mb-4">
+                    Portale dedicato ai dipendenti e portieri condominiali
+                </p>
+                <div class="flex items-center bordeaux-text font-semibold">
+                    <span>Accedi al servizio</span>
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Card 4: Detrazioni Fiscali -->
+            <a href="https://studio-cai-detrazioni.vercel.app/" target="_blank" class="card bg-white rounded-2xl shadow-lg p-8 block animate-fade-in delay-4">
+                <div class="icon-container">
+                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">
+                    Detrazioni Fiscali
+                </h2>
+                <p class="text-gray-600 mb-4">
+                    Modulo per aliquote differenziate abitazione principale
+                </p>
+                <div class="flex items-center bordeaux-text font-semibold">
+                    <span>Accedi al servizio</span>
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Card 5: Anagrafe Condominiale -->
+            <a href="https://studio-cai-anagrafe.vercel.app/" target="_blank" class="card bg-white rounded-2xl shadow-lg p-8 block animate-fade-in delay-5">
+                <div class="icon-container">
+                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">
+                    Anagrafe Condominiale
+                </h2>
+                <p class="text-gray-600 mb-4">
+                    Raccolta e gestione dati anagrafici condominiali
+                </p>
+                <div class="flex items-center bordeaux-text font-semibold">
+                    <span>Accedi al servizio</span>
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Info Box -->
+        <div class="mt-12 bg-red-50 border-l-4 rounded-lg p-6" style="border-left-color: #800020;">
+            <div class="flex items-start">
+                <svg class="w-6 h-6 mt-0.5 mr-3 flex-shrink-0 bordeaux-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                    <h3 class="font-semibold bordeaux-text mb-2">Informazioni</h3>
+                    <p class="text-gray-700 text-sm mb-2">
+                        Ogni servizio aprirà in una nuova scheda del browser.
+                    </p>
+                    <p class="text-gray-700 text-sm">
+                        Per assistenza o informazioni, visita il sito web: 
+                        <a href="https://www.studiocai.it" target="_blank" class="bordeaux-text font-semibold hover:underline">www.studiocai.it</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-16">
+        <div class="max-w-6xl mx-auto px-6 py-8 text-center">
+            <p class="text-gray-600 text-sm">
+                <strong>Centro Amministrazione Immobili</strong> - Portale Servizi Online
+            </p>
+            <p class="text-gray-500 text-xs mt-2">
+                <a href="https://www.studiocai.it" target="_blank" class="hover:text-gray-700 hover:underline">www.studiocai.it</a>
+            </p>
+            <p class="text-gray-500 text-xs mt-1">
+                © 2025 Centro Amministrazione Immobili. Tutti i diritti riservati.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
