@@ -1,0 +1,8 @@
+{
+  "webhook_url": "https://hook.eu1.make.com/INSERISCI-QUI-IL-TUO-WEBHOOK",
+  "modalita": "diretto",
+  "ripiego_webhook": true,
+  "max_parte_mb": 140,
+  "cartella_dropbox": "/Audiolibro Promessi Sposi/Registrazioni",
+  "riepilogo_finale": true
+}
