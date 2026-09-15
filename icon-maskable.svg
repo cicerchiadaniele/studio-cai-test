@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Presenze CAI">
+  <rect width="512" height="512" fill="#8B1538"/>
+  <text x="256" y="292" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="132" font-weight="600" letter-spacing="5" fill="#FBF7F2">CAI</text>
+  <rect x="180" y="326" width="152" height="10" rx="5" fill="#FBF7F2" opacity="0.65"/>
+</svg>
